@@ -91,22 +91,22 @@ https://hub.docker.com/u/openemis
     1) Clone this repository of OpenEMIS Core 
 
 ```
-    git clone https://github.com/tixuz/openemis_docker_dev.git
-    cd core
-    docker-compose up -d
+$ git clone https://github.com/tixuz/openemis_docker_dev.git
+$ cd core
+$ docker-compose up -d
 
 ```
 
     2) Check the name of OpenEMIS Core container using 
 
 ```
-docker ps
+$ docker ps
 ```
 
     3) Copy the OpenEMIS Core directory to
 
 ```
-docker cp <CONTAINER_ID_OR_NAME>:/var/www/html/core ./oe-core
+$ docker cp <CONTAINER_ID_OR_NAME>:/var/www/html/core ./oe-core
 ```
 
     4) Uncomment the following lines in docker-composer.yaml file
@@ -119,5 +119,5 @@ docker cp <CONTAINER_ID_OR_NAME>:/var/www/html/core ./oe-core
     5) Run docker-compose once again
 
 ```
-docker-compose up -d
+$ docker-compose up -d
 ```
