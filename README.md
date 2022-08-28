@@ -85,3 +85,30 @@ https://hub.docker.com/u/openemis
       - OE_EMAIL_USERNAME=...
       - OE_EMAIL_PASSWORD=...
       - OE_EMAIL_ADDRESS=...
+
+## Version for development (docker-compose)
+
+    1) Check the name of OpenEMIS Core container using 
+
+```
+docker ps
+```
+
+    2) Copy the OpenEMIS Core directory to
+
+```
+docker cp <CONTAINER_ID_OR_NAME>:/var/www/html/core ./oe-core
+```
+
+    3) Uncomment the following lines in docker-composer.yaml file
+     
+```
+#    volumes:
+#      - ./oe-core/core:/var/www/html/core
+```
+    
+    4) Run docker-compose once again
+
+```
+docker-compose up -d
+```

@@ -18,6 +18,9 @@ services:
       - oe-database
     ports:
       - "8082:80"
+    volumes:
+      - ./oe-core/core:/var/www/html/core
+
   oe-database:
     image: mysql:5.7
     restart: always
