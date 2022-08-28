@@ -79,3 +79,5 @@ fabric.properties
 .gitignore
 
 oe-core/*
+
+!oe-core/.gitignore
